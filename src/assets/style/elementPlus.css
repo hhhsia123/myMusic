@@ -1,0 +1,169 @@
+/* 全局样式 */
+html,
+body {
+    --theme_color: #0C871B;
+}
+
+/* primary按钮样式 */
+.el-button--primary {
+    background-color: var(--theme_color);
+    border-color: var(--theme_color);
+}
+
+.el-button--primary:hover {
+    background-color: #1c922a;
+    border-color: #1c922a;
+}
+
+.el-button--primary:focus {
+    background-color: #1c922a;
+    border-color: #1c922a;
+}
+
+
+/* checkbox */
+.el-checkbox__inner:hover {
+    border-color: var(--theme_color);
+}
+
+.el-checkbox__input.is-focus .el-checkbox__inner {
+    border-color: var(--theme_color);
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner {
+    background-color: var(--theme_color);
+    border-color: var(--theme_color);
+}
+
+.el-checkbox__input.is-checked+.el-checkbox__label {
+    color: var(--theme_color);
+}
+
+.el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    background-color: var(--theme_color);
+    border-color: var(--theme_color);
+}
+
+/* input */
+.el-input__inner:focus {
+    border-color: var(--theme_color);
+}
+
+.el-range-editor.is-active,
+.el-range-editor.is-active:hover {
+    border-color: var(--theme_color);
+}
+
+.el-time-panel__btn.confirm {
+    color: var(--theme_color);
+}
+
+.el-picker-panel__icon-btn:hover {
+    color: var(--theme_color);
+}
+
+.el-date-table td.available:hover {
+    color: var(--theme_color);
+}
+
+.el-date-table td.start-date span {
+    background-color: var(--theme_color);
+}
+
+.el-date-table td.end-date span {
+    background-color: var(--theme_color);
+}
+
+.el-date-table td.today span {
+    color: var(--theme_color);
+}
+
+/* 面包屑 */
+.el-breadcrumb__inner a:hover {
+    color: var(--theme_color);
+}
+
+/* menu 导航栏 */
+.el-menu--horizontal>.el-menu-item.is-active {
+    border-bottom: 2px solid var(--theme_color);
+    color: var(--theme_color);
+}
+
+.el-menu--horizontal>.el-menu-item:hover {
+    color: var(--theme_color);
+}
+
+.el-menu--horizontal .el-menu-item:not(.is-disabled):focus,
+.el-menu--horizontal .el-menu-item:not(.is-disabled):hover {
+    color: var(--theme_color);
+}
+
+/* 下拉菜单 */
+.el-dropdown-menu__item:not(.is-disabled):hover {
+    background-color: #c0f7c7;
+    color: var(--theme_color);
+}
+
+/* el-select */
+.el-select .el-input.is-focus .el-input__inner {
+    border-color: var(--theme_color);
+}
+
+.el-select .el-input__inner:focus {
+    border-color: var(--theme_color);
+}
+
+.el-select-dropdown__item.selected {
+    color: var(--theme_color);
+}
+
+/* .el-cascader */
+.el-cascader .el-input.is-focus .el-input__inner {
+    border-color: var(--theme_color);
+}
+
+.el-cascader-node.is-active,
+.el-cascader-node.is-selectable.in-checked-path {
+    color: var(--theme_color);
+}
+
+.el-cascader-node.in-active-path,
+.el-cascader-node.is-active,
+.el-cascader-node.is-selectable.in-checked-path {
+    color: var(--theme_color);
+}
+
+/* .el-radio */
+.el-radio__input.is-checked .el-radio__inner {
+    background-color: var(--theme_color);
+    border-color: var(--theme_color);
+}
+
+.el-radio__inner:hover {
+    border-color: var(--theme_color);
+}
+
+/* el-pager */
+.el-pager li.active {
+    color: var(--theme_color);
+}
+
+.el-pager li:hover {
+    color: var(--theme_color);
+}
+
+/* el-pagination */
+.el-pagination__sizes .el-input .el-input__inner:hover {
+    border-color: var(--theme_color);
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+    background-color: var(--theme_color);
+}
+
+/* el-tree */
+.el-tree-node.is-current>.el-tree-node__content {
+    background-color: var(--theme_color);
+    color: #fff;
+
+}

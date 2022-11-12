@@ -1,0 +1,51 @@
+// less混入就是，申明一段css代码（选择器包裹的代码）或者函数，在其他css选择器调用，可复用包裹的代码。
+.hoverShadow {
+    transition: all .5s;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    }
+}
+
+// 按钮
+.buttom() {
+    --el-button-hover-text-color: rgb(51, 51, 51);
+    --el-button-hover-bg-color: rgb(252, 223, 223);
+    --el-button-hover-border-color: rgb(252, 206, 206);
+    --el-button-active-border-color: #ec4141;
+
+}
+
+// ...
+.overflow() {
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /* 设置对齐模式 */
+    -webkit-box-orient: vertical;
+    /* 设置盒子的行数 */
+    -webkit-line-clamp: 1;
+}
+
+// 球
+.isshowTop() {
+    background: radial-gradient(circle at 35% 25%, #fff 0, #fef0f0 20%, #fcdfdf 40%, #ec4141 90%, #ec4141 95%, #ec4141 100%);
+    box-shadow: 4px 7px 5px #888888;
+    position: absolute;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    z-index: 999;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    i {
+        font-size: 25px;
+        font-weight: 700;
+        color: @priceColor;
+    }
+}
