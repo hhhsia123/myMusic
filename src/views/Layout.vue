@@ -216,6 +216,7 @@ export default {
         let num = 0
         // 监听关闭按钮关闭了也要关闭
         watch(() => store.state.showOrHide.discShowHide, (newValue) => {
+            isneedle.value = newValue
             if (num === 0) {
                 if (route.path === '/privacy/4') {
                     drawer.value = false
