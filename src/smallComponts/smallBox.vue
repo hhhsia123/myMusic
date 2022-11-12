@@ -34,7 +34,7 @@
 // vue3引入
 import { VideoPlay } from '@element-plus/icons-vue'
 
-import { ref, watch } from 'vue'
+import { ref } from 'vue'
 export default {
     name: 'smallBox',
     components: {
@@ -50,9 +50,9 @@ export default {
     setup(props) {
         const data = ref([])
         const num = ref(null)
-        watch(() => props.songData, () => {
-            data.value = props.songData
-        }, { immediate: true })
+        // watch(() => props.songData, () => {
+        //     data.value = props.songData
+        // }, { immediate: true })
         // 获取播放量
         const getPlayCount = (num) => {
             if (num > 100000000) {

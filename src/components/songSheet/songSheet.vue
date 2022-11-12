@@ -50,8 +50,10 @@
                 </div>
             </div>
             <!-- 盒子 -->
-            <smallBox v-if="playlists" :songData="playlists"></smallBox>
-            <div class="loading" v-loading="loading"></div>
+            <smallBox v-if="isplaylist" :songData="playlists"></smallBox>
+
+            <!-- <div v-else>1111</div> -->
+            <div class="loading block" v-loading="loading" v-else></div>
             <!-- 分页 -->
             <div class="example-pagination-block">
 
@@ -85,6 +87,7 @@ export default {
             currentPage: 1,
             offset: 0
         })
+        const isplaylist = ref(true)
         const scrollnum = ref(null)
         const offsetTop = ref(null)
         const total = ref(null)
@@ -121,6 +124,8 @@ export default {
         }
         // 获取分类的具体内容
         const getHighquality = (offset = 0, name) => {
+            isplaylist.value = false
+            loading.value = true
             highquality(offset, name).then(res => {
                 console.log(res)
                 playlists.value = res.data.playlists
@@ -130,6 +135,8 @@ export default {
                 console.log(picUrl.value[0].coverImgUrl)
                 // 获取总数量
                 total.value = res.data.total
+                isplaylist.value = true
+                loading.value = false
             })
         }
         // 获取分类接口
@@ -223,7 +230,7 @@ export default {
             // emit('clickTop', true)
         }
 
-        return { scroll, loadingScoll, offsetTop, total, clickButtom, handleCurrentChange, songParams, loading, closePopover, picUrl, CategoryArr, cartIndex, clickActive, categoryNum, qiehuan, clickTop, TopIndex, followCateName, playlists }
+        return { scroll, loadingScoll, offsetTop, total, isplaylist, clickButtom, handleCurrentChange, songParams, loading, closePopover, picUrl, CategoryArr, cartIndex, clickActive, categoryNum, qiehuan, clickTop, TopIndex, followCateName, playlists }
     }
 }
 </script>
@@ -231,6 +238,16 @@ export default {
 .songSheetContainer {
     width: 900px;
     margin: 0px auto;
+
+    .block {
+        height: 500px;
+        width: 900px;
+    }
+
+    .loading {
+        top: -35px;
+        background-color: transparent;
+    }
 
     /deep/.example-pagination-block {
 

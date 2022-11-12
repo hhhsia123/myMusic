@@ -1,6 +1,6 @@
 <template>
     <div class="auto">
-        <div class="common-layout" :style="{ top: moveY + 'px', left: moveX + 'px' }">
+        <div class="common-layout">
 
             <appTop @change="move"></appTop>
             <div class="contain">
@@ -422,7 +422,7 @@ export default {
             height: 670px;
             background-color: rgb(255, 255, 255);
             position: absolute;
-            top: 10%;
+            top: 4%;
             left: 11%;
             box-shadow: 3px 2px 9px 4px rgba(0, 0, 0, 0.2);
 

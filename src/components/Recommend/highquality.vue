@@ -15,12 +15,12 @@
                                 <!-- 播放按钮 -->
                                 <i class=" playButtom iconfont  icon-bofang-copy"></i>
                             </div>
-                            <div class="desc">{{item.name}}</div>
+                            <div class="desc">{{ item.name }}</div>
                             <div class="playCount">
                                 <el-icon size="20px" color="#fff">
                                     <VideoPlay />
                                 </el-icon>
-                                <span style="color: #fff;font-size: 10px;">{{getPlayCount(item.playCount)}}</span>
+                                <span style="color: #fff;font-size: 10px;">{{ getPlayCount(item.playCount) }}</span>
                             </div>
                         </RouterLink>
                     </li>
@@ -137,6 +137,8 @@ export default {
                 }
 
                 .image {
+                    background: black url(../../assets/imagges/图未加载.png) no-repeat center;
+
                     &:hover {
                         .masks {
                             opacity: 1;

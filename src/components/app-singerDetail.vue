@@ -239,7 +239,7 @@ export default {
 
     .showBackTop {
         top: 70%;
-        left: 74%;
+        left: 80%;
         .isshowTop();
         animation: BackTop 2s linear alternate;
 
