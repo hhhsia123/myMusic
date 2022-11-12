@@ -284,7 +284,7 @@ export default {
 }
 
 /deep/.el-textarea__inner {
-    width: 500px;
+    width: 442px;
     height: 152px;
     resize: none;
     border-radius: 0px;
@@ -292,7 +292,7 @@ export default {
 
 /deep/.el-textarea {
 
-    width: 500px;
+    width: 442px;
 }
 
 /deep/ .el-button {
