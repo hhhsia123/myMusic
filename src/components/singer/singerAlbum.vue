@@ -190,7 +190,7 @@ export default {
 
     // 深度监视
     /deep/.boxContain {
-        /deep/ .box {
+        .box {
             margin: 10px 0 10px 0px;
 
         }

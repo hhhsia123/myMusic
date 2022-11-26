@@ -471,7 +471,7 @@ export default {
                 margin-right: 10px;
             }
 
-            /deep/.el-slider {
+            .el-slider {
                 margin-top: 5px;
                 height: 10px;
                 --el-slider-main-bg-color: @priceColor;
@@ -524,7 +524,7 @@ export default {
 
         /deep/.slider {
 
-            /deep/.demonstration {
+            .demonstration {
                 width: 60px;
                 --el-slider-main-bg-color: @priceColor;
                 --el-slider-runway-bg-color: #CECECE;

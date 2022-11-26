@@ -190,6 +190,13 @@ export default {
     font-weight: 700;
 }
 
+/deep/.boxContain {
+    .box {
+        margin: 10px 0 10px 0px;
+
+    }
+}
+
 .ellipsis() {
     /* 多行文本溢出隐藏，省略号代替 */
     overflow: hidden;

@@ -47,7 +47,7 @@ export default {
 <style lang="less" scoped>
 .similarContainer {
     /deep/.boxContain {
-        /deep/.box {
+        .box {
             margin: 10px 0 10px 0px;
 
         }

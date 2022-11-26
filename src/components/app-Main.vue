@@ -118,7 +118,7 @@ export default {
 
         .el-tab-pane {
             .el-table {
-                /deep/.cell {
+                .cell {
                     white-space: nowrap !important
                 }
 
@@ -127,23 +127,23 @@ export default {
 
         }
 
-        /deep/.el-tabs__item.is-active {
+        .el-tabs__item.is-active {
             color: @priceColor !important;
             font-weight: 700;
             font-size: 20px;
         }
 
-        /deep/.el-tabs__active-bar {
+        .el-tabs__active-bar {
             background-color: @priceColor ;
         }
 
-        /deep/ .el-tabs__nav-wrap {
+        .el-tabs__nav-wrap {
             &::after {
                 background-color: #fff;
             }
         }
 
-        /deep/.el-tabs__item:hover {
+        .el-tabs__item:hover {
             color: #5e5858;
         }
 

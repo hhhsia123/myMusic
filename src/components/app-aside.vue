@@ -2,7 +2,7 @@
     <div class="aside">
         <!-- 列表上 -->
         <el-scrollbar height="534px">
-            <a v-for="(item, i) in asideCateGory" :key="i" class="scrollbar-demo-item" @click="fontBig(i)"
+            <a v-for="(item, i) in asideCateGory" :key="i" class="scrollbar" @click="fontBig(i)"
                 :class="{ 'active': index === i && isShow === true }">{{ item }}
             </a>
             <div class="myMusic">我的音乐</div>
@@ -164,29 +164,30 @@ export default {
 }
 </script>
 <style lang="less" scoped>
-.scrollbar() {
-    display: flex;
-    padding-left: 10px;
-    align-items: center;
-    height: 30px;
-    margin: 10px 10px 0 10px;
-    text-align: center;
-    border-radius: 4px;
-    color: #373737;
-    cursor: pointer;
-    width: 100%;
+// .scrollbar() {
+//     //   display: -ms-flexbox;
+//     display: flex;
+//     padding-left: 10px;
+//     align-items: center;
+//     height: 30px;
+//     margin: 10px 10px 0 10px;
+//     text-align: center;
+//     border-radius: 4px;
+//     color: #373737;
+//     cursor: pointer;
+//     width: 100%;
 
-    &:hover {
-        background-color: #E0E0E0;
-        transition: all 0.5s;
-    }
+//     &:hover {
+//         background-color: #E0E0E0;
+//         transition: all 0.5s;
+//     }
 
-    &.active {
-        color: @priceColor;
-        font-weight: 900;
-        font-size: 18px;
-    }
-}
+//     &.active {
+//         color: @priceColor;
+//         font-weight: 900;
+//         font-size: 18px;
+//     }
+// }
 
 .aside {
     /deep/ .el-scrollbar .el-menu-vertical-demo {
@@ -214,8 +215,29 @@ export default {
                 left: 22px;
             }
 
-            /deep/.scrollbar-item {
-                .scrollbar();
+            .scrollbar-item {
+                display: flex;
+                padding-left: 10px;
+                align-items: center;
+                height: 30px;
+                margin: 10px 10px 0 10px;
+                text-align: center;
+                border-radius: 4px;
+                color: #373737;
+                cursor: pointer;
+                width: 100%;
+
+                &:hover {
+                    background-color: #E0E0E0;
+                    transition: all 0.5s;
+                }
+
+                &.active {
+                    color: @priceColor;
+                    font-weight: 900;
+                    font-size: 18px;
+                }
+
                 padding-left: 33px;
             }
         }
@@ -268,8 +290,28 @@ export default {
             font-size: 12px;
         }
 
-        /deep/.scrollbar-demo-item {
-            .scrollbar();
+        .scrollbar {
+            display: flex;
+            padding-left: 10px;
+            align-items: center;
+            height: 30px;
+            margin: 10px 10px 0 10px;
+            text-align: center;
+            border-radius: 4px;
+            color: #373737;
+            cursor: pointer;
+            width: 100%;
+
+            &:hover {
+                background-color: #E0E0E0;
+                transition: all 0.5s;
+            }
+
+            &.active {
+                color: @priceColor;
+                font-weight: 900;
+                font-size: 18px;
+            }
 
         }
     }

@@ -80,7 +80,7 @@ export default {
     margin: 0px auto;
 
     /deep/.boxContain {
-        /deep/ .box {
+        .box {
             margin: 10px 0 10px 0px;
 
         }

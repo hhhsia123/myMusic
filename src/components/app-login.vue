@@ -22,7 +22,7 @@
         <img class="picIcon" src="../assets/imagges/网易云图标.jpeg" alt="">
         <el-form :model="formLabelAlign" :rules="rules" ref="ruleFormRef">
             <el-form-item prop="uname">
-                <el-input :prefix-icon="Search" v-model="formLabelAlign.uname" placeholder="请输入手机号">
+                <el-input :prefix-icon="Search" v-model.number="formLabelAlign.uname" placeholder="请输入手机号">
                     <template #prefix>
                         <el-icon class="el-input__icon">
                             <Iphone />
